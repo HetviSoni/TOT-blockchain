@@ -98,7 +98,7 @@ const LoginForm = () => {
                                 <input type="text" placeholder="User name" value={leetcodeName} onChange={handleUserName} />
                             <div>
                             <p>Email</p>
-                            <input value={email} type='text' placeholder="enter email" onChange={handleEmailChange}/>                               
+                            <input value={email} type='text' placeholder="enter email" onChange={handleEmailChange}/>                               <button onClick={()=>login('google')}>google</button>
                             <button onClick={()=>{loginwithLink(email)}} className="button">
                                     Login with link
                             </button>
