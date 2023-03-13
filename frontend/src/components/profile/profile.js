@@ -208,9 +208,9 @@ const Profile = () => {
                         <div className="streak-container">
                             <h3>Streak</h3>
                             <div>
-                                {/* <div className="streak-map">
+                                <div className="streak-map">
                                     <Heatmap submissionCalendar={profile.submissionCalendar}/>
-                                </div> */}
+                                </div>
 
                             </div>
                         </div>
