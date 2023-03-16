@@ -3,6 +3,7 @@ import { Component } from "react";
 // import Navbar from "./navbar";
 import History from "../../assets/history.png"
 import Bell from "../../assets/bell.png"
+import {ColorRing} from 'react-loader-spinner';
 import "./profile.css";
 import Logo from "../../assets/logohorizontal.png";
 import Edit from "../../assets/arrow-left-thin.png";
@@ -105,6 +106,7 @@ function shiftDate(date, numDays) {
 const Profile = () => {
     const history = useNavigate();
     const { email, account, leetcodeName, updateUserProfile } = useContext(AppContext);
+    const [loading,setloading] = useState(true);
     const [profile, updateProfile] = useState({
         dp: '',
         easy: 0,
@@ -115,6 +117,7 @@ const Profile = () => {
 
     const API_BASE_URL = "https://b150j.sse.codesandbox.io/"; // Replace with actual API base URL
     const USER_NAME = leetcodeName; // Replace with actual username
+    // const USER_NAME  = "Hetvi_Soni";
 
     const requestBody = {
         operationName: "getUserProfile",
@@ -154,7 +157,7 @@ const Profile = () => {
                 hard: profile.hard,
             })
 
-          
+            setloading(false);
         } catch (error) {
             console.error(error);
         }
@@ -168,6 +171,7 @@ const Profile = () => {
 
     }, [])
     return (
+        
         <div className="profile" >
             <div className="navbar" >
                 <div className="navbar-logo">
@@ -191,15 +195,25 @@ const Profile = () => {
 
             <div className="profile-container">
                 <div className="container-left" >
-                    <img className="dp" src={profile.dp} ></img>
+                    {
+                        loading?(<div className="dp" >
+                        <ColorRing visible={true}/>
+                    </div>):<img className="dp" src={profile.dp} ></img>
+                    }
+                    
                     <div className="info">
                         <div className="name" >
                             {leetcodeName}
                         </div>
                         <div className="description">
-                            I am a sophomore studing at Indian Institute of Information Technology, Vadodara
+                            I am a sophomore studying at Indian Institute of Information Technology, Vadodara
                         </div>
-                        <button className="edit" ><img src={Edit} /> Edit Profile</button>
+                        <button className="edit" >
+                            <div className="edit-content">
+                                <img src={Edit} width={25} height={25} />
+                                <small className="edit-btn-text"> Edit Profile</small> 
+                            </div>
+                        </button>
                     </div>
                 </div>
                 <div className="container-right">
@@ -207,12 +221,22 @@ const Profile = () => {
                     <div className="container-right-bottom" >
                         <div className="streak-container">
                             <h3>Streak</h3>
-                            <div>
+                            {
+                                loading?(<div className="streak-map" >
+                                <ColorRing visible={true}/>
+                            </div>):<div>
                                 <div className="streak-map">
                                     <Heatmap submissionCalendar={profile.submissionCalendar}/>
                                 </div>
 
                             </div>
+                            }
+                            {/* <div>
+                                <div className="streak-map">
+                                    <Heatmap submissionCalendar={profile.submissionCalendar}/>
+                                </div>
+
+                            </div> */}
                         </div>
                         <div className="email-container">
                             <h3>Email</h3>

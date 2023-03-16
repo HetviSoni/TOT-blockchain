@@ -5,7 +5,6 @@ const TransactionBox=(props)=>{
     
     return (
         <div className="box" >
-            {/* this is transaction box <br></br> */}
             <h4>Solved problem : {props.problemId}</h4>
             difficulty={props.difficulty}<br></br>
             coins={props.coins}<br></br>

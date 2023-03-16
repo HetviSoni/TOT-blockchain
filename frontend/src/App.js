@@ -1,5 +1,4 @@
 import "./App.css";
-// import Header from "./components/header/header";
 import HomePage from "./components/body/homepage";
 import SignupForm from "./components/signUp/SignupForm";
 import LoginForm from "./components/signIn/login";

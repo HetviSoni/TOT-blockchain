@@ -1,6 +1,4 @@
 import React, { useEffect, useState, useContext } from "react";
-import { Component } from "react";
-// import Navbar from "./navbar";
 import History from "../../assets/history.png"
 import Bell from "../../assets/bell.png"
 import "./companyprofile.css";
@@ -10,31 +8,14 @@ import Description from "../../assets/description.png"
 import Email from "../../assets/Email.png"
 import { AppContext } from "../context";
 import { useNavigate } from "react-router-dom";
-import useArcanaAuth from "../../arcanaAuth";
+
 const CompanyProfile = () => {
     
     const history = useNavigate();
-    const [loggedIn, setLoggedIn] = useState(true);
     const { email, account, companyName } = useContext(AppContext);
-    const {
-        initializeAuth,
-        login,
-        loginWithLink,
-        isLoggedIn,
-        getAccounts,
-        logout,
-        initialized,
-    } = useArcanaAuth();
-
-    const handleLogout = async()=>{
-        setLoggedIn(false);
-        await logout();
-        history("/");
-    }
-    return (
+    (
         
         <div className="profile" >
-            {/* <Navbar /> */}
             <div className="navbar" >
                 <div className="navbar-logo">
                     <img src={Logo} className="logo" alt='Code fraggers logo' onClick={() => history("/")} ></img>
@@ -45,14 +26,13 @@ const CompanyProfile = () => {
                             <img src={History} />
                         </li>
                         <li>
-                            <img src={Bell} onClick={()=>handleLogout} />
+                            <img src={Bell}  />
                         </li>
                         <li>
-                            dp
+                        <img className="navbar-dp"  width={30} height={30} src={Logo} ></img>
                         </li>
                     </ul>
                 </div>
-
             </div>
 
             <div className="profile-container">
@@ -84,28 +64,15 @@ const CompanyProfile = () => {
                             <div>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
                              </div>
                         </div>
-                        {/* <div className="achievements-container">
-                        <h3>achievements</h3>
-                        <div>achieveneijfie...</div>
-                    </div> */}
                         <div className="email-container">
                             <div className="email-heading"><img src={Email} width={25} height={25} /><h3> Email</h3></div>
 
                             <div>{email}</div>
                         </div>
-
                     </div>
                 </div>
             </div>
-
-            {/* <h1>This is profile page</h1> */}
         </div>
     )
 }
 export default CompanyProfile;
- // const getdata=()=>{
-    //     fetch("https://leetcode-stats-api.herokuapp.com/Hetvi_Soni")
-    //     .then((response)=>response.json()).then((json)=>{
-    //         console.log(json.easySolved);
-    //     })
-    // }

@@ -1,12 +1,8 @@
 .navbar{
-    /* height: 100px; */
-    /* border: 2px solid white; */
     display: flex;
     justify-content: space-between;
-    /* width: 20rem; */
     width: 100%;
     align-items: center;
-    /* margin-leftt: 1rem; */
     padding-right: 2em;
     padding-left: 3rem;
 }
@@ -14,17 +10,13 @@
     border-radius: 50%;
 }
 .navbar-logo img{
-    /* margin-right: 1rem; */
     width: 10rem;
-    /* border: 2px solid red; */
     cursor: pointer;
 }
 .list{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* width: 3rem; */
-    /* border: 2px solid yellow; */
     list-style: none;
 }
 .navbar-li{
@@ -34,7 +26,6 @@
     cursor:pointer;
 }
 .streak-map{
-    /* margin: 0.5rem; */
     padding: 0.5rem;
 }
 
@@ -43,8 +34,6 @@
 }
 .container-left{
     width: 30%;
-    /* border: 2px solid yellow; */
-    /* background-color: pink; */
     height: 100%;
 }
 .profile-container{
@@ -52,10 +41,8 @@
     background-color: #fff;
     height: 100vh;
     display: flex;
-    flex-wrap: wrap;
 }
 .dp{
-    /* padding: 2rem; */
     margin-left: 4rem;
     margin-right: 2rem;
     margin-top: 3rem;
@@ -67,9 +54,7 @@
 }
 .info{
     margin: 3rem;
-    /* background-color: orange; */
     padding: 1.5rem;
-    /* text-align: center; */
 }
 .info div{
     margin-bottom: 1rem;
@@ -87,27 +72,17 @@
     color:  #003049 ;
     border: 3px solid #003049 ;
 }
+
 .container-right{
     display: flex;
     flex-direction: column;
-    /* border: 2px solid red; */
     width: 70%;
     padding-top: 1rem;
     padding-left: 4rem;
 }
-/* .container{ */
-    /* border: 2px solid black; */
-    /* background-color: aqua; */
-/* } */
 .heading-container h2{
     font-family: 'Poppins', sans-serif;
 }
-/* .heading-container{
-    flex: 1;
-} */
-/* .achievements-container{
-    flex: 3;
-} */
 .streak-container{
     flex: 2;
 }
@@ -118,10 +93,26 @@
     flex: 1;
 }
 .container-right-bottom{
-    /* border: 2px solid yellow; */
     height: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: 3rem;
     justify-content: space-around;
 }
+@media (max-width: 768px) {
+    /* Styles to apply when the viewport is 768px or less */
+    .profile-container{
+        flex-direction: column;
+    }
+    .container-left{
+        width: 100%;
+    }
+    .container-right{
+        width: 100%;
+        background-color: #fff;
+    }
+    .dp{
+        width: 40%;
+        height: 35%;
+    }
+  }

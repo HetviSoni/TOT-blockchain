@@ -2,10 +2,8 @@ import Boy from "./boy";
 import Container from "./container";
 import './homepage.css';
 import Header from "../header/header";
-// import { Fragment } from "react";
 
 const HomePage = () => {
-    // console.log(username);
     return (
         <section>
             <Header />

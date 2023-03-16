@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+
 const AppContext = React.createContext();
 
 const AppProvider = ({children})=>{
@@ -29,7 +30,7 @@ const AppProvider = ({children})=>{
 
    
     return (
-        <AppContext.Provider value={{leetcodeName,changeLeetcodeName,email,changeEmail, account,changeAccount, companyName,changeCompanyName, updateUserProfile}} > {children}</AppContext.Provider>
+        <AppContext.Provider value={{leetcodeName,changeLeetcodeName,email,changeEmail, account,changeAccount, companyName,changeCompanyName, updateUserProfile, userProfile}} > {children}</AppContext.Provider>
     )
 };
 

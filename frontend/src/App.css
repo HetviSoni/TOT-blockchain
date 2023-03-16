@@ -1,14 +1,8 @@
-/* .img{
-    margin-top: 2em;
-    border: 2px solid red;
-} */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 
 body {
 	background-color: #003049;
-  /* overflow-y: hidden; */
 }
 
 .mainbody {
@@ -16,12 +10,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* margin-leftt: 3em; */
-	/* border: 2px solid yellow; */
 }
-/* .header{
-  border: 2px solid red;
-} */
 
 .primary-btn {
 	border: none;

@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@arcana/auth": "^1.0.0",
+    "@arcana/auth": "^1.0.3",
+    "@arcana/auth-react": "^0.0.3",
     "@emotion/react": "^11.10.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -15,7 +16,7 @@
     "react-loader-spinner": "^5.3.4",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
-    "react-tooltip": "^5.8.1",
+    "react-tooltip": "^5.10.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

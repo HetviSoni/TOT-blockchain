@@ -67,20 +67,6 @@ const SignupForm = () => {
                         <h1 className="signupheading">Sign up</h1>
 
                         {(Object.keys(formErrors).length === 0 && isSubmit) ? history("/login")
-
-                            // <div className="row">
-                            //     {/* <div className="col-xs-12 col-sm-6 col-sm-offset-3"> */}
-                            //     <div>
-                            //         <div className="new-message-box">
-                            //             <div className="new-message-box-success">
-                            //                 <div className="info-tab tip-icon-success" title="success"><i></i></div>
-                            //                 <div className="tip-box-success">
-                            //                     <p>Successfully signed up!</p>
-                            //                 </div>
-                            //             </div>
-                            //         </div>
-                            //     </div>
-                            // </div>
                             : <div></div>}
 
                         {(Object.keys(formErrors).length !== 0 && isSubmit) ? <div className="row">
@@ -126,10 +112,6 @@ const SignupForm = () => {
                             <button className="signup-btn">
                                 Sign up
                             </button>
-                            {/* <div>
-                            <h3>Login Failed</h3>
-                            <p>Username or password incorrect</p>
-                        </div> */}
                             <div className="signUp"  >
                                 <p className="signIn-text">You already have an account?</p>
                                 <a onClick={() => history("/login")}>Sign in</a>

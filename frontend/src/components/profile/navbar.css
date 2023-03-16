@@ -1,27 +1,19 @@
 .navbar{
-    /* height: 100px; */
-    /* border: 2px solid white; */
     display: flex;
     justify-content: space-between;
-    /* width: 20rem; */
     width: 100%;
     align-items: center;
-    /* margin-leftt: 1rem; */
     padding-right: 2em;
     padding-left: 3rem;
 }
 .navbar-logo img{
-    /* margin-right: 1rem; */
     width: 10rem;
-    /* border: 2px solid red; */
     cursor: pointer;
 }
 .list{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* width: 3rem; */
-    /* border: 2px solid yellow; */
     list-style: none;
 }
 .navbar-li{

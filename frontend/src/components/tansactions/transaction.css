@@ -10,11 +10,7 @@
     display: flex;
 }
 .transaction-container-left{
-    /* background-color: blueviolet; */
     width: 30%;
-    /* border: 2px solid yellow; */
-    /* background-color: pink; */
-    height: 100%;
     padding-top: 0;
 }
 .transaction-dp{
@@ -29,12 +25,25 @@
 }
 .questions-info{
     margin: 1rem;
-    /* background-color: orange; */
     padding: 1.5rem;
     font-family: 'Poppins', sans-serif;
-    /* text-align: center; */
 }
 .transaction-container-right{
-    /* background-color: aqua; */
     overflow-y: scroll;
 }
+@media (max-width: 768px) {
+    /* Styles to apply when the viewport is 768px or less */
+    .transaction-container{
+        flex-direction: column;
+    }
+    .transaction-container-left{
+        width: 100%;
+        border: 2px solid brown;
+    }
+    .transaction-container-right{
+        overflow-y: hidden;
+    }
+    .transaction-dp{
+         width: 40%;
+    }
+  }

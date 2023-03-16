@@ -3,27 +3,22 @@ import { Fade } from "react-awesome-reveal";
 
 import './boy.css';
 
-const Boy=props=>{
+const Boy = props => {
 
-    if(!props.fade ){
+    if (!props.fade) {
         console.log('hello')
-        return( 
-
-        
-                <Fade>
-
+        return (
+            <Fade>
                 <section className='boy'>
                     <img src={boyImage} alt='Boy' className='boyImg' ></img>
                 </section>
-                </Fade>
-      
+            </Fade>
+
         )
     }
-    else{
-        return( 
-
-        
-            <Fade direction='left'> 
+    else {
+        return (
+            <Fade direction='left'>
                 <section className='boy'>
                     <img src={boyImage} alt='Boy' className='boyImg' ></img>
                 </section>
@@ -31,6 +26,6 @@ const Boy=props=>{
         )
 
     }
-   
+
 }
 export default Boy;

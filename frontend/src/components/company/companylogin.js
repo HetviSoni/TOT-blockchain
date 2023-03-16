@@ -16,15 +16,11 @@ const CompanyLogin = () => {
         backgroundImage: `url(${Bg})`,
         height: '100vh',
         marginTop: '-70px',
-        // fontSize:'50px',
-        // backgroundSize: 'cover',
         backgroundPosition: '0px 350px',
         backgroundRepeat: 'no-repeat',
     };
     const [loading, setLoading] = useState(true);
     const [loggedIn, setLoggedIn] = useState(false);
-    // const [email,setEmail] = useState('');
-    // const [account, setAccount] = useState('');
     const { companyName, changeCompanyName, email, changeEmail, account, changeAccount } = useContext(AppContext);
     const {
         initializeAuth,
@@ -78,16 +74,6 @@ const CompanyLogin = () => {
     const history = useNavigate();
     return (
         <>
-            {/* <div className="home">
-                <Boy classname="img" fade={false} />
-                <Container className="home--content" />
-            </div>
-            <section className="logincontainer">
-                <h1 className="logoimg lgimg">
-                    <img src={Logo} className="log" alt='Code fraggers logo' onClick={() => history("/")}></img>
-                </h1>
-                <div className="logincover">
-                <h1 className="loginheading">Sign in</h1> */}
             {loading ? (
                 <div className="'loading" >
                     <ColorRing visible={true} />
@@ -95,10 +81,7 @@ const CompanyLogin = () => {
             ) : !loading && loggedIn ? (
                 console.log("logged in"),
                 console.log(companyName),
-                // <button onClick={handleLogout} >logout</button>
                 history("/")
-                // <HomePage />
-
             ) :
                 (
                     <div className="company-login-container" style={myStyle} >
@@ -123,10 +106,7 @@ const CompanyLogin = () => {
                         </div>
                     </div>
                 )}
-            {/* </div>
-            </section> */}
-
-
+          
         </>
     )
 }
