@@ -46,8 +46,8 @@ const Transactions = () => {
                             <img src={Bell} />
                         </li>
                         <li onClick={() => history("/profile")} >
-                            {/* <img src={userProfile.dp} className="navbar-dp" width={30} height={30} /> */}
-                            dp
+                            <img src={userProfile.dp} className="navbar-dp" width={30} height={30} />
+                            
 
                         </li>
                     </ul>
@@ -68,12 +68,13 @@ const Transactions = () => {
                             medium:{userProfile.medium}<br></br>
                             hard:{userProfile.hard}<br></br>
                         </div>
-                        <div className="attempted">
+                        <br></br><br></br><br></br>
+                        {/* <div className="attempted">
                             <h4>Questions attempted</h4>
                             easy: <br></br>
                             medium: <br></br>
                             hard: <br></br>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className="container-right">

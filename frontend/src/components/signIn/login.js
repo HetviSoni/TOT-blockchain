@@ -44,6 +44,7 @@ const LoginForm = () => {
                 if (isLogged) {
                     setLoggedIn(true);
                     const acc = await getAccounts();
+                    console.log("acc is "+acc);
                     changeAccount(acc[0]);
                     setLoading(false);
                 }
@@ -83,7 +84,7 @@ const LoginForm = () => {
                                 <button onClick={() => { loginwithLink(email) }} className="button">
                                     Login with link
                                 </button>
-                                <h4>OR</h4> 
+                                <h4 className="Or">OR</h4> 
                                 <div class="google-btn" onClick={() => { googleLogin() }}>
                                     <div class="google-icon-wrapper">
                                         <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" />

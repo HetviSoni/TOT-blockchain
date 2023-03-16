@@ -38,7 +38,8 @@
     }
     .transaction-container-left{
         width: 100%;
-        border: 2px solid brown;
+        height: max-content;
+        /* border: 2px solid brown; */
     }
     .transaction-container-right{
         overflow-y: hidden;

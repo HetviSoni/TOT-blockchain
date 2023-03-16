@@ -240,7 +240,7 @@ const Profile = () => {
                         </div>
                         <div className="email-container">
                             <h3>Email</h3>
-                            <div>{email}</div>
+                            <div>{email} 202051178@iiitvadodara.ac.in</div>
                         </div>
                         <div className="address-container">
                             <h3>Metamask public Address</h3>
