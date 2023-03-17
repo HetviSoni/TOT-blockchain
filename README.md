@@ -13,3 +13,7 @@ We have created ERC20 tokens called fraggers. It is hosted on the local ethereum
 ![Your Profile](https://user-images.githubusercontent.com/76479104/222915076-07822e7f-8f8f-418b-a497-4351a04aa3b1.png)
 
 ![History (1)](https://user-images.githubusercontent.com/76479104/222915130-726d263b-be1d-412a-84d9-badb580f00bf.png)
+
+![fn](https://user-images.githubusercontent.com/76479104/225813966-5ae038f2-3a0f-450c-a322-a254eef23f70.png)
+![rn](https://user-images.githubusercontent.com/76479104/225813991-6b5c3129-7cfb-4a2b-ab2c-8fc5d86d6b67.png)
+
