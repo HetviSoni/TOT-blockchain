@@ -8,8 +8,12 @@ The goal of the project was to develop an application using Web2 and Blockchain 
 
 We have created ERC20 tokens called fraggers. It is hosted on the local ethereum test net. On the basis of problems solved by the students we will transfer these tokens into their accounts.These records would also be helpful for different companies that want to hire students. It would reduce time and effort in their hiring process.
 
-![Landing page - Final](https://user-images.githubusercontent.com/76479104/222915036-fb871610-7aff-4b64-8c5d-deb2ac383ba2.png)
+![Screenshot (154)](https://user-images.githubusercontent.com/76479104/225926384-6441b614-7f5e-4872-b9c9-15a88fcf0832.png)
+![Screenshot (155)](https://user-images.githubusercontent.com/76479104/225926377-aef51305-bcb2-46bc-8db4-c75c9127ade0.png)
+![Screenshot (156)](https://user-images.githubusercontent.com/76479104/225926368-f53087c0-3f44-4f44-95a5-5705f6169f2d.png)
 
-![Your Profile](https://user-images.githubusercontent.com/76479104/222915076-07822e7f-8f8f-418b-a497-4351a04aa3b1.png)
 
-![History (1)](https://user-images.githubusercontent.com/76479104/222915130-726d263b-be1d-412a-84d9-badb580f00bf.png)
+
+![fn](https://user-images.githubusercontent.com/76479104/225813966-5ae038f2-3a0f-450c-a322-a254eef23f70.png)
+![rn](https://user-images.githubusercontent.com/76479104/225813991-6b5c3129-7cfb-4a2b-ab2c-8fc5d86d6b67.png)
+
