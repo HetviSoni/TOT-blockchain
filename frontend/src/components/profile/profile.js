@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useContext } from "react";
 import { Component } from "react";
-// import Navbar from "./navbar";
 import History from "../../assets/history.png"
 import Bell from "../../assets/bell.png"
 import {ColorRing} from 'react-loader-spinner';
@@ -54,8 +53,6 @@ function Heatmap({ submissionCalendar }) {
         return count;
     }
 
-    console.log(calculateAverage(countValues));
-
     let count = Object.values(orderedFormattedDates).length;
 
     const data = Array.from(Array(count).keys()).map((index) => {
@@ -102,7 +99,6 @@ function shiftDate(date, numDays) {
     return newDate;
 }
 
-// export const totalSubmissionCount={totalSubmissionCount};
 const Profile = () => {
     const history = useNavigate();
     const { email, account, leetcodeName, updateUserProfile } = useContext(AppContext);
@@ -117,7 +113,6 @@ const Profile = () => {
 
     const API_BASE_URL = "https://b150j.sse.codesandbox.io/"; // Replace with actual API base URL
     const USER_NAME = leetcodeName; // Replace with actual username
-    // const USER_NAME  = "Hetvi_Soni";
 
     const requestBody = {
         operationName: "getUserProfile",
@@ -164,11 +159,7 @@ const Profile = () => {
     };
 
     useEffect(() => {
-        console.log(leetcodeName);
-        console.log(account);
         fetchUserProfile();
-        console.log(profile+"submission calendar is "+profile.submissionCalendar);
-
     }, [])
     return (
         
@@ -231,12 +222,7 @@ const Profile = () => {
 
                             </div>
                             }
-                            {/* <div>
-                                <div className="streak-map">
-                                    <Heatmap submissionCalendar={profile.submissionCalendar}/>
-                                </div>
-
-                            </div> */}
+                            
                         </div>
                         <div className="email-container">
                             <h3>Email</h3>
