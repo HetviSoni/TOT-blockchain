@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useContext } from "react";
-import { Component } from "react";
 import History from "../../assets/history.png"
 import Bell from "../../assets/bell.png"
 import {ColorRing} from 'react-loader-spinner';
@@ -40,18 +39,6 @@ function Heatmap({ submissionCalendar }) {
 
     let dateValues = Object.values(orderedFormattedDates);
     let countValues = Object.values(arr[0]);
-
-    function calculateAverage(array) {
-        var total = 0;
-        var count = 0;
-
-        array.forEach(function (item, index) {
-            total += item;
-            count++;
-        });
-
-        return count;
-    }
 
     let count = Object.values(orderedFormattedDates).length;
 
@@ -160,7 +147,7 @@ const Profile = () => {
 
     useEffect(() => {
         fetchUserProfile();
-    }, [])
+    }, )
     return (
         
         <div className="profile" >
@@ -171,13 +158,13 @@ const Profile = () => {
                 <div className="navbar-li" >
                     <ul className="list" >
                         <li>
-                            <img src={History} onClick={() => history("/transactions")} />
+                            <img src={History} alt="'history"  onClick={() => history("/transactions")} />
                         </li>
                         <li>
-                            <img src={Bell} />
+                            <img src={Bell} alt="bell" />
                         </li>
                         <li>
-                            <img src={profile.dp} className="navbar-dp" width={30} height={30} />
+                            <img src={profile.dp} alt="dp" className="navbar-dp" width={30} height={30} />
                         </li>
                     </ul>
                 </div>
@@ -189,7 +176,7 @@ const Profile = () => {
                     {
                         loading?(<div className="dp" >
                         <ColorRing visible={true}/>
-                    </div>):<img className="dp" src={profile.dp} ></img>
+                    </div>):<img className="dp" src={profile.dp} alt="dp"></img>
                     }
                     
                     <div className="info">
@@ -201,7 +188,7 @@ const Profile = () => {
                         </div>
                         <button className="edit" >
                             <div className="edit-content">
-                                <img src={Edit} width={25} height={25} />
+                                <img src={Edit} width={25} height={25} alt="edit" />
                                 <small className="edit-btn-text"> Edit Profile</small> 
                             </div>
                         </button>

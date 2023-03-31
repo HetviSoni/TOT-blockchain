@@ -40,13 +40,13 @@ const Transactions = () => {
                 <div className="navbar-li" >
                     <ul className="list" >
                         <li>
-                            <img src={History} />
+                            <img src={History}alt="history"/>
                         </li>
                         <li>
-                            <img src={Bell} />
+                            <img src={Bell} alt="bell" />
                         </li>
                         <li onClick={() => history("/profile")} >
-                            <img src={userProfile.dp} className="navbar-dp" width={30} height={30} />
+                            <img src={userProfile.dp} alt="dp" className="navbar-dp" width={30} height={30} />
                             
 
                         </li>
@@ -56,7 +56,7 @@ const Transactions = () => {
             </div>
             <div className="transaction-container">
                 <div className="transaction-container-left" >
-                    <img className="transaction-dp" src={userProfile.dp} ></img>
+                    <img className="transaction-dp" alt="dp" src={userProfile.dp} ></img>
                     <div className="questions-info">
                         <div className="name" >
                             {leetcodeName}

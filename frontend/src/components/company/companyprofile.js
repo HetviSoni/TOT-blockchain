@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useContext } from "react";
 import History from "../../assets/history.png"
 import Bell from "../../assets/bell.png"
 import "./companyprofile.css";
@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom";
 const CompanyProfile = () => {
     
     const history = useNavigate();
-    const { email, account, companyName } = useContext(AppContext);
+    const { email,  companyName } = useContext(AppContext);
     (
         
         <div className="profile" >
@@ -23,13 +23,13 @@ const CompanyProfile = () => {
                 <div className="navbar-li" >
                     <ul className="list" >
                         <li>
-                            <img src={History} />
+                            <img src={History} alt="history"/>
                         </li>
                         <li>
-                            <img src={Bell}  />
+                            <img src={Bell} alt="bell"  />
                         </li>
                         <li>
-                        <img className="navbar-dp"  width={30} height={30} src={Logo} ></img>
+                        <img className="navbar-dp" alt="dp"  width={30} height={30} src={Logo} ></img>
                         </li>
                     </ul>
                 </div>
@@ -37,7 +37,7 @@ const CompanyProfile = () => {
 
             <div className="profile-container">
                 <div className="container-left" >
-                    <img className="dp" src={Logo} ></img>
+                    <img className="dp" src={Logo} alt="logo"></img>
                     <div className="info">
                         <div className="name" >
                             {companyName}
@@ -47,7 +47,7 @@ const CompanyProfile = () => {
                         </div>
                         <button className="edit" >
                             <div className="edit-content">
-                                <img src={Edit} width={25} height={25} />
+                                <img src={Edit} width={25} height={25} alt="edit"/>
                                 <small className="edit-btn-text"> Edit Profile</small> 
                             </div>
                         </button>
@@ -58,14 +58,14 @@ const CompanyProfile = () => {
                     <div className="container-right-bottom" >
                         <div className="description-container">
                             <div className="comp-desc-heading">
-                                <img className="description" src={Description} />
+                                <img className="description" src={Description} alt="discription" />
                                 <h3> Company Description</h3>
                             </div>
                             <div>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
                              </div>
                         </div>
                         <div className="email-container">
-                            <div className="email-heading"><img src={Email} width={25} height={25} /><h3> Email</h3></div>
+                            <div className="email-heading"><img src={Email} alt="email" width={25} height={25} /><h3> Email</h3></div>
 
                             <div>{email}</div>
                         </div>
