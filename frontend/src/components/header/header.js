@@ -7,7 +7,7 @@ import {useNavigate} from "react-router-dom";
 
 const Header = () =>{
     const history = useNavigate();
-    const {leetcodeName,changeLeetcodeName, companyName, changeCompanyName} = useContext(AppContext);
+    const {leetcodeName, companyName} = useContext(AppContext);
     return (
     <header className="header">
     <div className="header--container">

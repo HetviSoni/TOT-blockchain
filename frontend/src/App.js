@@ -9,7 +9,6 @@ import CompanyProfile from "./components/company/companyprofile";
 import Transactions from "./components/tansactions/transactions";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
-	const username='';
 	return (
 		<Fragment>
 			<body className="mainbody">

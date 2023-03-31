@@ -8,14 +8,13 @@ import { AppContext } from "../context";
 const LoginForm = () => {
     const [loading, setLoading] = useState(true);
     const [loggedIn, setLoggedIn] = useState(false);
-    const { leetcodeName, changeLeetcodeName, email, changeEmail, account, changeAccount } = useContext(AppContext);
+    const { leetcodeName, changeLeetcodeName, email, changeEmail, changeAccount } = useContext(AppContext);
     const {
         initializeAuth,
         login,
         loginWithLink,
         isLoggedIn,
         getAccounts,
-        logout,
         initialized,
     } = useArcanaAuth();
 
@@ -35,7 +34,7 @@ const LoginForm = () => {
 
     useEffect(() => {
         initialize();
-    }, []);
+    });
 
     useEffect(() => {
         const loadDetails = async () => {
@@ -54,7 +53,7 @@ const LoginForm = () => {
             }
         };
         loadDetails();
-    }, [initialized]);
+    }, [initialized, changeAccount, getAccounts, isLoggedIn]);
     const handleEmailChange = (event) => {
         changeEmail(event.target.value);
     }
@@ -87,7 +86,7 @@ const LoginForm = () => {
                                 <h4 className="Or">OR</h4> 
                                 <div class="google-btn" onClick={() => { googleLogin() }}>
                                     <div class="google-icon-wrapper">
-                                        <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" />
+                                        <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="icon" />
                                     </div>
                                     <p class="btn-text"><b>Sign in with google</b></p>
                                 </div>
